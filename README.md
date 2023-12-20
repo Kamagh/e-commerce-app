@@ -7,6 +7,50 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Laravel React E-commerce App
+
+This is a sample E-commerce application built with Laravel and React.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [Composer](https://getcomposer.org/)
+- [Laravel](https://laravel.com/docs/8.x#installation)
+
+## Getting Started
+
+Follow the instructions below to set up and run the project locally.
+
+# 1. Clone the Repository
+```git clone https://github.com/Kamagh/e-commerce-app.git```
+
+# 2. Navigate to the Project Directory
+```cd e-commerce-app```
+
+# 3. Install Laravel Dependencies
+```composer install```
+
+# 4. Install Node.js Dependencies
+```npm install```
+
+# 5. Set Up Environment Variables
+# Copy the .env.example file to .env and update the database and other necessary configurations.
+```cp .env.example .env```
+
+# 6. Generate Application Key
+```php artisan key:generate```
+
+# 7. Run Migrations
+```php artisan migrate```
+
+# 8. Start the Development Server
+```php artisan serve```
+
+# 9. Run Webpack Mix
+```npm run dev```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

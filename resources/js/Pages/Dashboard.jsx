@@ -9,17 +9,13 @@ export default function Dashboard({ auth }) {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [products, setProducts] = useState([]);
 
-    console.log('categories', categories)
-    console.log('products', products)
-    console.log('selectedCategory', selectedCategory)
-
     useEffect(() => {
         // Fetch categories and products data from your Laravel backend
-        fetch('/api/categories')
+        fetch('/categories')
             .then(response => response.json())
             .then(data => setCategories(data));
 
-        fetch('/api/products')
+        fetch('/products')
             .then(response => response.json())
             .then(data => setProducts(data));
     }, []);

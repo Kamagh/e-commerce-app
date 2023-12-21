@@ -8,7 +8,12 @@ const ProductList = ({ products }) => {
             <h3 className="text-lg font-semibold mt-8 mb-4">Products</h3>
             <ul>
                 {products.map(product => (
-                    <li key={product.id}>{product.name}</li>
+                    <li key={product.id}>
+                        <strong>{product.name}</strong>
+                        <p>{product.description}</p>
+                        <p>Price: ${product.price}</p>
+                        <hr />
+                    </li>
                 ))}
             </ul>
         </div>
